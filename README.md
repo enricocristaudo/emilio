@@ -19,8 +19,7 @@ This application was created by Enrico Cristaudo.
 
 ## Features
 
-The android app lets you:
-- WIP
+
 
 ## Screenshots
 
@@ -36,5 +35,16 @@ The android app lets you:
 
 ## Permissions
 
+In order to work, emilio need this permissions:
+```xml
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.INTERNET" />
+```
 
-## Contributing
+## Implementations
+
+Library i used to make this Android application:
+- [Android Volley](https://google.github.io/volley/)
+- [Picasso](https://square.github.io/picasso/)
