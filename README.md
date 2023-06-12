@@ -27,6 +27,7 @@ The android app lets you:
 <div>
 <a href="readme/login.png"><img src="/readme/login.png" width="180" hspace="5"></a>
 <a href="readme/home.png"><img src="/readme/home.png" width="180" hspace="5"></a>
+<a href="readme/recipe.png"><img src="/readme/recipe.png" width="180" hspace="5"></a>
 <a href="readme/saved.png"><img src="/readme/saved.png" width="180" hspace="5"></a>
 <a href="readme/add.png"><img src="/readme/add.png" width="180" hspace="5"></a>
 <a href="readme/profile.png"><img src="/readme/profile.png" width="180" hspace="5"></a>
