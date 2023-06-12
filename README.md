@@ -1,6 +1,10 @@
-# emilio - Android App ![Build status](https://github.com/enricocristaudo/emilio/workflows/CI/badge.svg?branch=master)
+# emilio - Android App
+<img src="/readme/emilio-logo.png" align="left"
+width="200" hspace="10" vspace="10">
 
-
+emilio is a recipe manager app.
+Unlike other services, emilio is free and open source.
+You need an account first, which you are going to use in this app.
 
 ## About
 
