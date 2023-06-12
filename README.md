@@ -1,11 +1,13 @@
 # emilio - Android App
-<img src="/readme/emilio-logo.png" align="left"
-width="200" hspace="10" vspace="10">
+<img src="/readme/emilio-logo.svg" align="left"
+width="150" hspace="10" vspace="10">
 
-emilio is a recipe manager app.
-Unlike other services, emilio is free and open source.
-You need an account first, which you are going to use in this app.
+emilio is a recipe manager app. <br>
+Unlike other services, emilio is free and open source. <br>
+You need an account first, which you are going to use in this app. <br>
 
+Currently unavailable to download it from official stores. <br>
+Coming soon. <br> <br>
 ## About
 
 emilio has been made for you to easly store and manage your favourite recipes.
