@@ -1,4 +1,4 @@
-# emilio - Android App
+# emilio - Android App ![Build status](https://github.com/wallabag/android-app/workflows/CI/badge.svg?branch=master)
 
 
 
