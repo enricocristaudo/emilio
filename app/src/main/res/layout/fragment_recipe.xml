@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <View
+                    android:id="@+id/gradient"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradients" />
+
+                <TextView
+                    android:id="@+id/name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Name"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:fontFamily="@font/inter"
+                android:text="TextView"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:backgroundTint="@color/main"
+                android:drawableLeft="@drawable/baseline_add_24"
+                android:fontFamily="@font/inter"
+                android:text="Aggiungi ai preferiti" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Ingredienti"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/list_view_ingredients"
+                style="@style/Widget.AppCompat.ListView.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="190sp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:dividerHeight="5sp"
+                android:longClickable="false"
+                android:nestedScrollingEnabled="true"
+                android:paddingBottom="5sp"
+                android:scrollbars="none">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Preparazione"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/recipe_preparation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="50sp"
+                android:fontFamily="@font/inter"
+                android:text="Vai alla preparazione"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

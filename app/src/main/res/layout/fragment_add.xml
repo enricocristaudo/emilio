@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddFragment">
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profle_name"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Aggiungi ricetta"
+                android:textSize="26sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                app:cardCornerRadius="5dp">
+
+                <EditText
+                    android:id="@+id/name_add_new"
+                    style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/inter"
+                    android:hint="Nome"
+                    android:inputType="text" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/type_add_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="20sp"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_primo"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primo" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_secondo"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secondo" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_dolce"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dolce" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20sp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/photo_placeholder"
+                    android:layout_width="110dp"
+                    android:layout_height="110sp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@mipmap/photo_placeholder_foreground"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginBottom="5sp"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="Foto"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_scatta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15sp"
+                            android:layout_marginRight="5sp"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/inter"
+                            android:text="Scatta foto" />
+
+                        <Button
+                            android:id="@+id/btn_scegli"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/inter"
+                            android:text="Scegli"
+                            app:strokeColor="@color/main" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Ingredienti"
+                android:textSize="20sp" />
+
+            <SearchView
+                android:id="@+id/ingredient_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp" />
+
+            <ListView
+                android:id="@+id/ingredients_add_new_list"
+                style="@style/Widget.AppCompat.Light.ListView.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:dividerHeight="5sp"
+                android:nestedScrollingEnabled="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Descrizione"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/desc_add_new"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:ems="10"
+                android:hint="scrivi qua..."
+                android:inputType="text|textLongMessage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="5sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Preparazione"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/prep_add_new"
+                style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:ems="10"
+                android:hint="scrivi qua..."
+                android:inputType="text|textLongMessage" />
+
+            <Button
+                android:id="@+id/btn_save_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="50sp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/inter"
+                android:text="Salva" />
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

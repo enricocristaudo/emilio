@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:gravity="center"
+    android:padding="20sp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrazione"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="50sp"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:paddingLeft="20dp"
+        android:height="60dp"
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/inter"
+        android:hint="Nome" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:paddingLeft="20dp"
+        android:id="@+id/inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/inter"
+        android:hint="Username" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/custom_input"
+        android:fontFamily="@font/inter"
+        android:hint="Password" />
+
+    <TextView
+        android:id="@+id/error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:textColor="#ff0000"
+        android:visibility="gone"
+        android:layout_marginBottom="10sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main"
+        android:text="Registrati"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:fontFamily="@font/inter"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:id="@+id/submit"
+        />
+
+    <TextView
+        android:id="@+id/tw_login_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Già registrato? Accedi"
+        android:fontFamily="@font/inter"
+        android:layout_marginTop="20dp" />
+
+
+</LinearLayout>

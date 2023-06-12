@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">emilio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rimuovi_dai_preferiti">Rimuovi dai preferiti</string>
+    <string name="aggiungi_ai_preferiti">Aggiungi ai preferiti</string>
+</resources>
