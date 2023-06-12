@@ -48,3 +48,8 @@ In order to work, emilio need this permissions:
 Library i used to make this Android application:
 - [Android Volley](https://google.github.io/volley/)
 - [Picasso](https://square.github.io/picasso/)
+
+## Licence
+
+This application is released under GNU GPLv3 (see [LICENSE](LICENSE)).
+Some of the used libraries are released under different licenses.
