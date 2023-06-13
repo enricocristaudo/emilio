@@ -16,7 +16,9 @@ emilio has been made for you to easily store and manage your favourite recipes.
 This android application allows you to add custom recipes and store them online.
 
 This application was originally created by Enrico Cristaudo and released under the GNU GPLv3.<br>
-Still in BETA version.
+Still under development.
+
+*Currently in italian only*
 
 ## Features
 
