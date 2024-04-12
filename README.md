@@ -1,5 +1,6 @@
 # emilio - Android App
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENCE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
 <img src="/readme/emilio-logo.svg" align="left"
 width="150" hspace="10" vspace="10">
 
